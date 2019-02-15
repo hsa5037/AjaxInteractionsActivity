@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Activity: Ajax Interactions</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Weather Application</legend>
+        <label for="zipcode">Zip Code</label>
+        <input type="text" name="zipcode" id="zipcode">
+        <input type="submit" id="zipcodeSubmit">
+        <br />
+        Or
+        <br />
+        <label for="citystate">City</label>
+        <input type="text" name="citystate" id="citystate">
+        <input type="submit" id="citystateSubmit">
+      </fieldset>
+    </form>
+    <div>
+      <h2>Weather</h2>
+      <ul>
+        <li><span>Temperature: </span><span id="temperature"></span></li>
+        <li><span>Humidity: </span><span id="humidity"></span></li>
+       <!--  <li><span>Data: </span><span id='dataSent'></span></li> -->
+      </ul>
+    </div>
+    <form>
+      <fieldset>
+        <legend>HTTPBin</legend>
+        <label for="httpbin">Enter Data</label>
+        <input type="text" name="httpbin" id="httpbin">
+        <input type="submit" id="httpbinSubmit">
+      </fieldset>
+    </form>
+    <div>
+      <h2>Data</h2>
+      <ul>
+        <li><span>Data: </span><span id='dataSent'></span></li>
+      </ul>
+    </div>
+    <script src = "weather.js"></script>
+    <script src = "httpbin.js"></script>
+  </body>
+</html>
